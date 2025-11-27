@@ -1,4 +1,4 @@
-Setup
+## Project setup (with docker)
 
 Clone the repository
 
