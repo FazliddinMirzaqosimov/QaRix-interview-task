@@ -1,4 +1,3 @@
-## Project setup (with docker)
 
 Clone the repository
 
@@ -7,7 +6,14 @@ git clone https://github.com/your-username/project-name.git
 cd project-name
 ```
 
-Docker
+
+Copy .env variables
+```bash
+cp .env.template .env
+```
+
+
+## Project setup (with docker)
 
 Build & Run
 
