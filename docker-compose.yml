@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+  api:
+    image: car:20
+    build: .
+    restart: always
+    volumes:
+      - ./prisma/db:/app/prisma/db
+    ports:
+      - '${PORT}:${PORT}'
+    env_file:
+      - .env
+ 
