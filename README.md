@@ -7,21 +7,6 @@ git clone https://github.com/your-username/project-name.git
 cd project-name
 ```
 
-Install dependencies
-
-```bash
-pnpm install
-```
-
-Setup environment variables
-
-Copy .env.example to .env and fill in your values.
-
-```bash
-cp .env.template .env
-```
-
-
 Docker
 
 Build & Run
@@ -34,4 +19,38 @@ Stop containers
 
 ```bash
 docker compose down
+```
+
+
+
+## Project setup (without docker)
+
+```bash
+$ pnpm install
+```
+
+## Compile and run the project
+
+```bash
+# development
+$ pnpm run start
+
+# watch mode
+$ pnpm run start:dev
+
+# production mode
+$ pnpm run start:prod
+```
+
+## Run tests
+
+```bash
+# unit tests
+$ pnpm run test
+
+# e2e tests
+$ pnpm run test:e2e
+
+# test coverage
+$ pnpm run test:cov
 ```
